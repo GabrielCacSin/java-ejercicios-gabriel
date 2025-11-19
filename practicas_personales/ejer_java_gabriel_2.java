@@ -5,7 +5,23 @@ public class ejer_java_gabriel_2 {
         System.out.println(ej6_recursividad("amor")); 
         System.out.println(ej6_recursividad("amigos")); 
         System.out.println(ej7_recursividad(5));
+        System.out.println(ej1_recursividad(556846));
     }
+
+//-----------------------------------------------------------------------------------------------------------------------------
+    
+    static int ej1_recursividad(int num){
+        if (num == 0) {
+            return 0;
+        }
+        return 1 + ej1_recursividad(num / 10);
+    }
+
+//-----------------------------------------------------------------------------------------------------------------------------
+
+
+
+//-----------------------------------------------------------------------------------------------------------------------------
 
     static boolean ej6_recursividad(String palabra){
     // Si la palabra tiene 0 o 1 letra, ya está ordenada por definición.
@@ -20,12 +36,12 @@ public class ejer_java_gabriel_2 {
         if (palabra.charAt(0) > palabra.charAt(1)) {
             return false;
         }
-        // Llamamos a la función de nuevo, pero cortando la primera letra.
         return ej6_recursividad(palabra.substring(1));
     }
+
+//-----------------------------------------------------------------------------------------------------------------------------
     
     static String ej7_recursividad(int N) {
-        // Validación del requisito (N > 0)
         if (N <= 0) {
             return "N debe ser un número natural (mayor que cero).";
         }
@@ -45,6 +61,8 @@ public class ejer_java_gabriel_2 {
         if (n == 1) {
             return "1";
         }
-        return construirCadenaRecursiva(n - 1) + "+" + n;
+        return construirCadenaRecursiva(n - 1) + " + " + n;
     }
+
+//-----------------------------------------------------------------------------------------------------------------------------
 }
