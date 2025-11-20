@@ -1,3 +1,4 @@
+package practicas_personales;
 public class ejer_java_gabriel_2 {
     public static void main(String[] args) {
         //aqui se ejecutan las funciones, intentare comentar bien estos ej (no entinedo mucho)
