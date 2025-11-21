@@ -1,6 +1,7 @@
 public class ejer_java_gabriel_2 {
     public static void main(String[] args) {
         //aqui se ejecutan las funciones, intentare comentar bien estos ej (no entinedo mucho)
+        System.out.println(ej6_recursividad("Amor"));
         separador();
         System.out.println(ej7_recursividad(5));
         separador();
@@ -39,6 +40,8 @@ public class ejer_java_gabriel_2 {
 //-----------------------------------------------------------------------------------------------------------------------------
     static boolean ej6_recursividad(String palabra){
     // Si la palabra tiene 0 o 1 letra, ya está ordenada por definición.
+    //añadir uhn tolowercase
+        palabra=palabra.toLowerCase();
         if (palabra.length() <= 1) {
             return true;
         }
