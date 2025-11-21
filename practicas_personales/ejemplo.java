@@ -1,4 +1,3 @@
-package practicas_personales;
 public class ejemplo {
     public static void main(String[] args) {
         hola();

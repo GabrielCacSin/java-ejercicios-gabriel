@@ -1,12 +1,14 @@
-package practicas_personales;
 public class ejer_java_gabriel_2 {
     public static void main(String[] args) {
         //aqui se ejecutan las funciones, intentare comentar bien estos ej (no entinedo mucho)
-        
-        System.out.println(ej6_recursividad("amor")); 
-        System.out.println(ej6_recursividad("amigos")); 
+        separador();
         System.out.println(ej7_recursividad(5));
-        System.out.println(ej1_recursividad(556846));
+        separador();
+    }
+
+//-----------------------------------------------------------------------------------------------------------------------------
+    static void separador(){
+        System.out.println("//-----------------------------------------------------------------------------------------------------------------------------");
     }
 
 //-----------------------------------------------------------------------------------------------------------------------------
@@ -20,10 +22,21 @@ public class ejer_java_gabriel_2 {
 
 //-----------------------------------------------------------------------------------------------------------------------------
 
-
+    static void ej3_recursividad(int n) {
+        if (n < 10) {
+            System.out.print(n);
+            return; 
+        }   
+        int ultimoDigito = n % 10;
+        System.out.print(ultimoDigito);
+        ej3_recursividad(n / 10);
+    }
 
 //-----------------------------------------------------------------------------------------------------------------------------
 
+
+
+//-----------------------------------------------------------------------------------------------------------------------------
     static boolean ej6_recursividad(String palabra){
     // Si la palabra tiene 0 o 1 letra, ya está ordenada por definición.
         if (palabra.length() <= 1) {
@@ -51,12 +64,16 @@ public class ejer_java_gabriel_2 {
         return "(" + cadenaFormato + " = " + sumaTotal + ")";
     }
 
+//-----------------------------------------------------------------------------------------------------------------------------
+
     static int calcularSumaRecursiva(int n) {
         if (n == 1) {
             return 1;
         }
         return n + calcularSumaRecursiva(n - 1);
     }
+
+//-----------------------------------------------------------------------------------------------------------------------------
 
     static String construirCadenaRecursiva(int n) {
         if (n == 1) {
