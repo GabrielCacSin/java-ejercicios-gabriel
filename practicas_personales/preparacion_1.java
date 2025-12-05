@@ -196,7 +196,7 @@ public class preparacion_1 {
             while (sw==false){  //*mediante este switch controlo que si o si emde solo 1 caracter
                 if(caracter.length()>1){
                     System.out.println("dame un solo caracter y te dire si es vocal");  //* lo vuelvo a pedir
-                    caracter = sc.nextLine().trim().charAt(0);   //* lo vuelvo a recoger para contarlo o usar aqui el charAt aqui para 
+                    //caracter = sc.nextLine().trim().charAt(0);   //* lo vuelvo a recoger para contarlo o usar aqui el charAt aqui para 
                 }else{
                     sw=true;
                 }
